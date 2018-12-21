@@ -6,10 +6,12 @@ layout: default
 {{ content }}
 
 <h2>Slides</h2>
+<a href="#print" data-work='print' class="jump_to" onclick="return false;">Show Print</a>
+<a href="#content" data-work='content' class="jump_to" onclick="return false;">Show Content</a>
 <ul>
     {% for slide in site.data.slides %}
         {% if slide.client == page.short_name %}
-            <li><img data-work="{{ slide.work }}" src="{{ slide.src }}" alt=""></li>
+            <li><img class="slide" data-work="{{ slide.work }}" src="{{ slide.src }}" alt=""></li>
         {% endif %}
     {% endfor %}
 </ul>

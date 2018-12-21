@@ -1,0 +1,13 @@
+---
+title: Clients
+---
+<h1>Clients</h1>
+
+<ul>
+  {% for client in site.clients %}
+    <li>
+      <h2><a href="{{ client.url }}">{{ client.name }}</a></h2>
+      <p>{{ client.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

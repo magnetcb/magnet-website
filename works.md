@@ -1,0 +1,13 @@
+---
+title: Works
+---
+<h1>Works</h1>
+
+<ul>
+  {% for work in site.works %}
+    <li>
+      <h2><a href="{{ work.url }}">{{ work.name }}</a></h2>
+      <p>{{ work.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

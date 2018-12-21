@@ -1,0 +1,39 @@
+collections:
+  authors:
+    output: true
+    permalink: /:collection/:name
+  clients:
+    output: true
+    permalink: /:collection/:name
+  works:
+    output: true
+    permalink: /:collection/:name
+
+
+permalink: /:categories/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"
+  - scope:
+      path: ""
+      type: "works"
+    values:
+      layout: "work"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

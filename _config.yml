@@ -1,3 +1,6 @@
+url : https://vigilant-meitner-6e3bbb.netlify.com/
+permalink: /:categories/:title/
+
 collections:
   authors:
     output: true
@@ -8,9 +11,6 @@ collections:
   works:
     output: true
     permalink: /:collection/:name
-
-
-permalink: /:categories/:title/
 
 defaults:
   - scope:

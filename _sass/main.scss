@@ -168,17 +168,13 @@ nav {
     }
 }
 
-.work-name:first-child::before {
-    content: '';
-}
-
-.work-name::before {
-    content: '| ';
-    margin-right: 20px;
+.work-name:first-child {
+    border: none;
 }
 
 .work-name {
     text-transform: lowercase;
+    border-left: 1px solid white;
     padding: 6px 12px;
 }
 

@@ -1,7 +1,58 @@
+@import 'reset';
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #BB958C;
+$secondary-color: rgb(255, 255, 255);
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font: 100% $font-stack;
+    background-color: $primary-color;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+
+    ul {
+        list-style: none;
+    }
+
+    li { display: inline-block; }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        text-transform: lowercase;
+    }
+}
+
 .current {
     color: green;
 }
 
-img {
-    width: 500px;
+.slider-container {
+    width: 100%;
+
+    .slick-slide {
+        img {
+            width: 500px;
+        }
+    }
 }

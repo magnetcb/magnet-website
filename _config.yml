@@ -4,13 +4,13 @@ permalink: /:categories/:title/
 collections:
   authors:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
   clients:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
   works:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
 
 defaults:
   - scope:

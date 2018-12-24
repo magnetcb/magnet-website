@@ -1,4 +1,4 @@
-var jumpToButtons = document.querySelectorAll('.jump_to');
+/* var jumpToButtons = document.querySelectorAll('.jump_to');
 var slideImages = document.querySelectorAll('.slide');
 
 jumpToButtons.forEach(function(button) {
@@ -11,4 +11,12 @@ jumpToButtons.forEach(function(button) {
             };
         });
     });
+}); */
+
+$(document).ready(function(){
+    $('.works-slider').slick({});
+});
+
+$(document).ready(function(){
+    $('.clients-slider').slick({});
 });

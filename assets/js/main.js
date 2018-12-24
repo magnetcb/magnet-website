@@ -15,4 +15,19 @@ jumpToButtons.forEach(function(button) {
 
 $(document).ready(function(){
     $('.slider').slick({});
+
+    changeClientNameBasedOnSlide();
+
+    $(".slider").on("beforeChange", function (){
+        changeClientNameBasedOnSlide();
+    });
+
+    function changeClientNameBasedOnSlide() {
+        if($('.slick-active img').attr('data-client')) {
+            var slideClientNameFromSlide = $('.slick-active img').attr('data-client');
+            $('#client-name').text(slideClientNameFromSlide);
+        } else {
+            return false;
+        }
+    }
 });

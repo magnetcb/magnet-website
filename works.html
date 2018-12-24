@@ -2,13 +2,16 @@
 title: Works
 id: works
 ---
-<h1>Works</h1>
-
-<ul>
-  {% for work in site.works %}
-    <li>
-      <h2><a href="{{ work.url }}">{{ work.name }}</a></h2>
-      <p>{{ work.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<div id="works-content">
+  <div id="works-info">
+      <h3>bold identity + brilliant ideas = winning brands </h3>
+      <p>We are a boutique creative agency providing custom-tailored services for a select clientele. We work according to a simple truth: Neither great design nor great ideas are enough on their own; there needs to be a strong cohesion between strategy, design and content! Accordingly, by looking at brands through the scope of content and marketing and not just advertising, we help brands to create comprehensive strategies and methodologies to effectively communicate, connect and grow. In short, we deliver the best for your brand.</p>
+  </div>
+  <ul id="works-list">
+    {% for work in site.works %}
+      <li>
+        <a href="{{ work.url }}">{{ work.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

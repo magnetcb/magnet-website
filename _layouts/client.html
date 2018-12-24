@@ -12,9 +12,11 @@ layout: default
 </div>
 <div id="footer">
     <p>
-        print | content 
+        {% for work in page.works %}
+            <span class="work-name">{{work}}</span>
+        {% endfor %}
         <span>&gt;</span> 
-        <span id="brand-name"></span>
+        <span id="client-name">{{ page.name }}</span>
     </p>
 </div>
 

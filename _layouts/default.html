@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | Magnet Creative Branding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/libraries/slick/slick.css">
@@ -12,7 +12,7 @@
     {% seo %}
   </head>
   <body>
-    <div {% if page.id == 'home' %}id="home-wrapper"{% endif %} class="wrapper">
+    <div {% if page.id == 'home' %}id="home-wrapper"{% endif %} {% if page.id == 'works' %}id="works-wrapper"{% endif %} class="wrapper">
       {% include navigation.html %}
       {{ content }}
     </div>

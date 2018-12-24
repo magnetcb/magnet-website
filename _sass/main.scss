@@ -59,12 +59,22 @@ nav {
     text-align: center;
 
     nav {
-        display: none;
+        top: 90%;
+        bottom: 0%;
+
+        #logo {
+            display: none;
+        }
+
+        ul {
+            margin: auto;
+            padding: auto;
+        }
     }
 
     img {
-        min-width: 500px;
         width: 50%;
+        min-width: 500px;
     }
 }
 

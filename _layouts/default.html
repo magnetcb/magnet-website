@@ -12,7 +12,7 @@
     {% seo %}
   </head>
   <body>
-    <div id="{{ page.id }}-wrapper">
+    <div {% if page.id == 'home' %}id="home-wrapper"{% endif %} class="wrapper">
       {% include navigation.html %}
       {{ content }}
     </div>

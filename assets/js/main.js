@@ -14,9 +14,5 @@ jumpToButtons.forEach(function(button) {
 }); */
 
 $(document).ready(function(){
-    $('.works-slider').slick({});
-});
-
-$(document).ready(function(){
-    $('.clients-slider').slick({});
+    $('.slider').slick({});
 });

@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/libraries/slick/slick.css">
+    <link rel="stylesheet" href="/assets/libraries/slick/slick-theme.css">
     {% feed_meta %}
     {% seo %}
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <div id="{{ page.id }}-wrapper">
+      {% include navigation.html %}
+      {{ content }}
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="/assets/libraries/slick/slick.min.js"></script>
     <script src="/assets/js/main.js"></script>

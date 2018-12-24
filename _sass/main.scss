@@ -1,8 +1,9 @@
 @import 'reset';
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: #BB958C;
-$secondary-color: rgb(255, 255, 255);
+$brand-color: #BB958C;
+$primary-color: #ffffff;
+$secondary-color: #F2BB00;
 
 html, body {
     height: 100%;
@@ -11,7 +12,8 @@ html, body {
 
 body {
     font: 100% $font-stack;
-    background-color: $primary-color;
+    color: $primary-color;
+    background-color: $brand-color;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -23,36 +25,69 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1em;
     position: absolute;
     top: 0%;
     right: 0%;
     left: 0%;
 
-    ul {
-        list-style: none;
-    }
-
     li { display: inline-block; }
 
     a {
         display: block;
         padding: 6px 12px;
-        text-decoration: none;
         text-transform: lowercase;
+        color: $primary-color;
+    }
+
+    %color-transition {
+        color: $secondary-color;
+        transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+        @extend %color-transition;
+    }
+
+    .current {
+        @extend %color-transition;
     }
 }
 
-.current {
-    color: green;
+#home-wrapper {
+    text-align: center;
+
+    nav {
+        display: none;
+    }
+
+    img {
+        min-width: 500px;
+        width: 50%;
+    }
 }
 
 .slider-container {
-    width: 100%;
+    margin: auto;
+    width: 90%;
 
-    .slick-slide {
-        img {
-            width: 500px;
-        }
+    .slider {
+        .slick-slide {
+            text-align: center;
+            img {
+                margin: auto;
+                width: 500px;
+            }
+        }   
     }
+}
+
+#footer {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    padding: 1em;
+    text-align: center;
 }

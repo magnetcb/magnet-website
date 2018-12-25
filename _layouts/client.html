@@ -10,7 +10,7 @@ layout: default
         {% endfor %}
     </div>
 </div>
-<footer id="footer">
+<div id="footer">
     <p>
         {% for work in page.works %}
             <a href="#{{work}}" data-work="{{work}}" class="work-name">{{work}}</a>
@@ -18,4 +18,4 @@ layout: default
         <span>&gt;</span> 
         <span class="client-name">{{ page.name }}</span>
     </p>
-</footer>
+</div>

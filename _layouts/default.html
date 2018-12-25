@@ -14,7 +14,9 @@
   <body>
     <div {% if page.id == 'home' %}id="home-wrapper"{% endif %} {% if page.id == 'works' %}id="works-wrapper"{% endif %} class="wrapper">
       {% include navigation.html %}
-      {{ content }}
+      <main>
+        {{ content }}
+      </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="/assets/libraries/slick/slick.min.js"></script>

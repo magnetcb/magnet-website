@@ -1,4 +1,5 @@
 url : https://vigilant-meitner-6e3bbb.netlify.com/
+host: localhost
 permalink: /:categories/:title
 
 collections:

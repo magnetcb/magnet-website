@@ -1,6 +1,7 @@
 @import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Montserrat', Helvetica, sans-serif;
 $brand-color: #BB958C;
 $primary-color: #ffffff;
 $secondary-color: #F2BB00;
@@ -28,6 +29,7 @@ body {
     .wrapper {
         width: 100%;
         margin: auto;
+        text-align: center;
     }
 }
 
@@ -79,30 +81,53 @@ nav {
 
     img {
         width: 50%;
-        min-width: 500px;
+        min-width: 300px;
+        margin: 1em;
     }
+
     #crossing-animation {
         position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
         .part {
             position: absolute;
         }
         #left-line {
-            border: 5px solid $primary-color;
+            border-bottom: 15px solid $primary-color;
             width: 0;
             left: 0%;
+            -webkit-animation: lineGetsWider 3s;
+            -moz-animation:    lineGetsWider 3s; 
+            -o-animation:      lineGetsWider 3s; 
+            animation:         lineGetsWider 3s; 
+            animation-fill-mode: forwards;
         }
-        #left-line:hover {
-            width: 50%;
-            transition: width 2s ease-in-out;
+        @keyframes lineGetsWider {
+            100% {
+                width: 50%;
+            }
         }
+
         #right-text {
-            border: 5px solid $primary-color;
+            text-align: left;
             right: 0%;
-            width: 0%;
+            width: 15%;
+            opacity: 0;
+            font-size: 1.2em;
+            -webkit-animation: textAppearsAndSlides 3s;
+            -moz-animation:    textAppearsAndSlides 3s; 
+            -o-animation:      textAppearsAndSlides 3s; 
+            animation:         textAppearsAndSlides 3s; 
+            animation-fill-mode: forwards;
         }
-        #right-text:hover {
-            width: 50%;
-            transition: width 2s ease-in-out;
+
+        @keyframes textAppearsAndSlides {
+            100% {
+                opacity: 1;
+                width: 49%;
+            }
         }
     }
 }
@@ -110,6 +135,7 @@ nav {
 #works-wrapper {
     height: 100%;
     min-height: 100%;
+    text-align: left;
 
     #works-content {
         padding: 1em;
@@ -126,6 +152,10 @@ nav {
         flex: 2;
         padding: 1em;
         line-height: 1.5em;
+
+        h3 {
+            margin: 0;
+        }
     }
 
     #works-list {
@@ -162,7 +192,7 @@ nav {
             text-align: center;
             img {
                 margin: auto;
-                width: 500px;
+                width: 50%;
             }
         }   
     }
@@ -178,7 +208,16 @@ nav {
     padding: 6px 12px;
 }
 
-#client-name {
+.active-filter {
+    background: #ffffff;
+    color: $brand-color !important;
+}
+
+.active-filter::before {
+    content: ' X ';
+}
+
+.client-name {
     padding: 6px 12px;
 }
 

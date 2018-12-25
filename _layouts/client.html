@@ -5,7 +5,7 @@ layout: default
     <div class="slider">
         {% for slide in site.data.slides %}
             {% if slide.client == page.short_name %}
-                <div><img data-work="{{ slide.work }}" src="{{ slide.src }}" alt=""></div>
+                <div class="{{ slide.work }}">{{ slide.work }}</div>
             {% endif %}
         {% endfor %}
     </div>
@@ -13,20 +13,9 @@ layout: default
 <div id="footer">
     <p>
         {% for work in page.works %}
-            <span class="work-name">{{work}}</span>
+            <a href="#{{work}}" data-work="{{work}}" class="work-name">{{work}}</a>
         {% endfor %}
         <span>&gt;</span> 
-        <span id="client-name">{{ page.name }}</span>
+        <span class="client-name">{{ page.name }}</span>
     </p>
 </div>
-
-<!-- <h2>Slides</h2>
-<a href="#print" data-work='print' class="jump_to" onclick="return false;">Show Print</a>
-<a href="#content" data-work='content' class="jump_to" onclick="return false;">Show Content</a>
-<ul>
-    {% for slide in site.data.slides %}
-        {% if slide.client == page.short_name %}
-            <li><img class="slide" data-work="{{ slide.work }}" src="{{ slide.src }}" alt=""></li>
-        {% endif %}
-    {% endfor %}
-</ul> -->

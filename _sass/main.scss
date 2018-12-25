@@ -1,10 +1,36 @@
 @import 'reset';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+@font-face {
+    font-family: 'Less';
+    src: url('/assets/fonts/Less.otf'); /* IE9 Compat Modes */
+    src: url('/assets/fonts/Less.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/Less.otf') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/Less.otf') format('woff'), /* Pretty Modern Browsers */
+        url('/assets/fonts/Less.otf')  format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/Less.otf#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GlacialIndifference-Regular';
+    src: url('/assets/fonts/GlacialIndifference-Regular.otf'); /* IE9 Compat Modes */
+    src: url('/assets/fonts/GlacialIndifference-Regular.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/GlacialIndifference-Regular.otf') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/GlacialIndifference-Regular.otf') format('woff'), /* Pretty Modern Browsers */
+        url('/assets/fonts/GlacialIndifference-Regular.otf')  format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/GlacialIndifference-Regular.otf#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 $font-stack: 'Montserrat', Helvetica, sans-serif;
+
+// Color variables
 $brand-color: #BB958C;
 $primary-color: #ffffff;
 $secondary-color: #F2BB00;
+
+// Media Query Break Points
+$break-small: 400px;
+$break-large: 1200px;
 
 %color-transition {
     color: $secondary-color;
@@ -59,6 +85,12 @@ nav {
 
     .current {
         @extend %color-transition;
+    }
+
+    #logo {
+        @media screen and (max-width: $break-small) {
+            display: none;
+        }
     }
 }
 
@@ -135,7 +167,6 @@ nav {
 #works-wrapper {
     height: 100%;
     min-height: 100%;
-    text-align: left;
 
     #works-content {
         padding: 1em;
@@ -146,6 +177,12 @@ nav {
         bottom: 0%;
         right: 0%;
         left: 0%;
+        text-align: left;
+
+        @media screen and (max-width: $break-small) {
+            top: 20%;
+            flex-direction: column;
+        }
     }
 
     #works-info {

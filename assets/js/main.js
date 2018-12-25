@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $('.slider').slick({});
+    $('.slider').slick({
+        waitForAnimate: false
+    });
 
     changeClientNameBasedOnSlide();
 

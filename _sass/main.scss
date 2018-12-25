@@ -249,9 +249,12 @@ nav {
     padding: 6px 12px;
 }
 
+.work-name:hover {
+    @extend %color-transition;
+}
+
 .active-filter {
-    background: #ffffff;
-    color: $brand-color !important;
+    color: $secondary-color !important;
 }
 
 .active-filter::before {
@@ -278,5 +281,6 @@ nav {
     right: 0%;
     left: 0%;
     padding: 1em;
+    margin: 1em;
     text-align: center;
 }

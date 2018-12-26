@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.slider').slick({
-        waitForAnimate: false
+        fade: true
     });
 
     changeClientNameBasedOnSlide();
@@ -37,13 +37,13 @@ $(document).ready(function(){
 
     function changeClientShortNameToFullName(shortname) {
         var extractedWords = shortname.split("-");
-        var capitalizedFirstLettersOfExtractedWords = extractedWords.map(word => capitalizeFirstLetter(word));
+        var extractedWordsCapitalized = extractedWords.map(word => capitalizeFirstLetter(word));
         var fullNameOfClient = '';
 
-        if(capitalizedFirstLettersOfExtractedWords.length > 1) {
-            fullNameOfClient = capitalizedFirstLettersOfExtractedWords.join(' ');
+        if(extractedWordsCapitalized.length > 1) {
+            fullNameOfClient = extractedWordsCapitalized.join(' ');
         } else {
-            fullNameOfClient = capitalizedFirstLettersOfExtractedWords[0];
+            fullNameOfClient = extractedWordsCapitalized[0];
         }
 
         return fullNameOfClient;

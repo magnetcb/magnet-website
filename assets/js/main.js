@@ -52,4 +52,18 @@ $(document).ready(function(){
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    
+    // Use this with hidden class on li items
+    /* $("#works-list li.hidden").each(function(i) {
+        $(this).delay(500 * i).queue(function(nxt) {
+            $(this).removeClass('hidden').addClass('animated fadeIn');
+            nxt();
+        });
+    }); */
+
+    $('#works-list li').each(function(index){
+        var item = $(this);
+        item.addClass('animated fadeOut');
+        setTimeout(function(){ item.removeClass('fadeOut').addClass('animated fadeIn'); }, (index + 1) * 200);
+    });    
 });

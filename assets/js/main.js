@@ -61,9 +61,13 @@ $(document).ready(function(){
         });
     }); */
 
-    $('#works-list li').each(function(index){
-        var item = $(this);
-        item.addClass('animated fadeOut');
-        setTimeout(function(){ item.removeClass('fadeOut').addClass('animated fadeIn'); }, (index + 1) * 200);
-    });    
+    animateEachListItem();
+
+    function animateEachListItem() {
+        $('#works-list li').each(function(index){
+            var item = $(this);
+            item.addClass('animated fadeOut');
+            setTimeout(function(){ item.removeClass('fadeOut').addClass('animated fadeIn'); }, (index + 1) * 200);
+        });
+    }
 });

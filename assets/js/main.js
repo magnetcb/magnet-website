@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     changeClientNameBasedOnSlide();
 
-    $(".slider").on("beforeChange", function (){
+    $(".slider").on("afterChange", function (){
         changeClientNameBasedOnSlide();
     });
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
             var clientNameFromSlide = $('.slick-active img').attr('data-client');
             var modifiedClientNameFromSlide = changeClientShortNameToFullName(clientNameFromSlide);
 
-            $('.client-name').text(modifiedClientNameFromSlide);
+            $('#client-name-in-works').text(modifiedClientNameFromSlide);
         } else {
             return false;
         }
@@ -52,14 +52,6 @@ $(document).ready(function(){
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    
-    // Use this with hidden class on li items
-    /* $("#works-list li.hidden").each(function(i) {
-        $(this).delay(500 * i).queue(function(nxt) {
-            $(this).removeClass('hidden').addClass('animated fadeIn');
-            nxt();
-        });
-    }); */
 
     animateEachListItem();
 

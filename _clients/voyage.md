@@ -1,6 +1,6 @@
 ---
 short_name: voyage
-name: Voyage Resort Hotel
-works: [print, content]
+name: Voyage Hotel
+works: [print, campaigns]
 ---
 Jill is an avid fruit grower based in the south of France.

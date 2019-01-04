@@ -47,6 +47,10 @@ body {
         width: 100%;
         margin: auto;
         text-align: center;
+
+        @media screen and (max-width: $break-small) {
+            margin-top: 150px;
+        }
     }
 }
 
@@ -60,6 +64,10 @@ nav {
     top: 0%;
     right: 0%;
     left: 0%;
+
+    @media screen and (max-width: $break-small) {
+        flex-direction: column;
+    }
 
     li { display: inline-block; }
 
@@ -82,10 +90,6 @@ nav {
         width: 20%;
         min-width: 150px;
         img { width: 100%; }
-
-        @media screen and (max-width: $break-small) {
-            display: none;
-        }
     }
 }
 

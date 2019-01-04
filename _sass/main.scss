@@ -20,7 +20,7 @@ $secondary-color: #F2BB00;
 
 // Media Query Break Points
 $break-small: 500px;
-$break-large: 1200px;
+$break-large: 1000px;
 
 %color-transition {
     color: $secondary-color;
@@ -265,14 +265,6 @@ nav {
             img {
                 margin: auto;
                 height: 75vh;
-                @media screen and (max-width: $break-small) {
-                    width: 100%;
-                    height: auto;
-                }
-                @media screen and (max-width: $break-large) {
-                    width: 100%;
-                    height: auto;
-                }
             }
         }   
     }
@@ -339,15 +331,18 @@ nav {
     ul {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     li {
         margin: 0.5em;
+        height: 100px;
     }
 
     img {
-        max-width: 200px;
+        height: 100%;
         transition: all 0.25s ease-in-out;
     }
 
@@ -359,5 +354,62 @@ nav {
     .brightness {
         -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1);
+    }
+}
+
+#contact-wrapper {
+    height: 100%;
+    min-height: 100%;
+
+    main {
+        height: 100%;
+        min-height: 100%;
+
+        div {
+            height: 100%;
+            min-height: 100%;
+            width: 75%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            @media screen and (max-width: $break-large) {
+                width: 90%;
+                padding-top: 1em;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            iframe, p {
+                width: 50%;
+                padding: 1em;
+
+                @media screen and (max-width: $break-large) {
+                    width: 90%;
+                    padding: 0;
+                }
+            }
+
+            iframe {
+                height: 50%;
+                max-width: 600px;
+                max-height: 450px;
+            }
+
+            p {
+                text-align: left;
+                font-size: 1.2em;
+
+                @media screen and (max-width: $break-large) {
+                    text-align: center;
+                }
+
+                @media screen and (max-width: $break-small) {
+                    font-size: 1em;
+                }
+            }
+        }
     }
 }

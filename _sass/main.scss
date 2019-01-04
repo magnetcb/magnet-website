@@ -14,7 +14,7 @@
 $font-stack: 'Montserrat', Helvetica, sans-serif;
 
 // Color variables
-$brand-color: #BB958C;
+$brand-color: #C5A999;
 $primary-color: #ffffff;
 $secondary-color: #F2BB00;
 
@@ -78,7 +78,7 @@ nav {
     }
 
     #logo {
-        width: 15%;
+        width: 20%;
         min-width: 150px;
         img { width: 100%; }
 
@@ -313,6 +313,14 @@ nav {
     padding: 1em;
     margin: 1em;
     text-align: center;
+
+    p {
+        font-size: 1em;
+
+        @media screen and (max-width: $break-small) {
+            font-size: 0.7em;
+        }
+    }
 }
 
 .hidden {

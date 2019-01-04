@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-font-smoothing: antialiased;
 
     .wrapper {
         width: 100%;
@@ -265,7 +266,12 @@ nav {
                 margin: auto;
                 height: 75vh;
                 @media screen and (max-width: $break-small) {
-                    height: 50vh;
+                    width: 100%;
+                    height: auto;
+                }
+                @media screen and (max-width: $break-large) {
+                    width: 100%;
+                    height: auto;
                 }
             }
         }   

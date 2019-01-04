@@ -14,7 +14,7 @@
 $font-stack: 'Montserrat', Helvetica, sans-serif;
 
 // Color variables
-$brand-color: #C5A999;
+$brand-color: #bb958c;
 $primary-color: #ffffff;
 $secondary-color: #F2BB00;
 
@@ -333,4 +333,31 @@ nav {
 
 .hidden {
     display: none;
+}
+
+#clients-content {
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li {
+        margin: 0.5em;
+    }
+
+    img {
+        max-width: 200px;
+        transition: all 0.25s ease-in-out;
+    }
+
+    img:hover{
+        -webkit-filter:none; 
+        filter:none;
+    }
+
+    .brightness {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+    }
 }

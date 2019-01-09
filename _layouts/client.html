@@ -5,7 +5,7 @@ layout: default
     <div class="slider">
         {% for slide in site.data.slides %}
             {% if slide.client == page.short_name %}
-                <div class="{{ slide.work }}"><img data-client="{{ slide.work }}" src="{{ slide.src }}" alt=""></div>
+                <div class="{{ slide.work }}"><img data-client="{{ slide.work }}" data-lazy="{{ slide.src }}" alt=""></div>
             {% endif %}
         {% endfor %}
     </div>

@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
-        fade: true
+        fade: true,
+        lazyLoad: 'ondemand'
     });
 
     changeClientNameBasedOnSlide();

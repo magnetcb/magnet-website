@@ -3,11 +3,9 @@ title: Clients
 id: clients
 ---
 <div id="clients-content">
-  <ul>
     {% for client in site.clients %}
-      <li>
+      <div>
         <a href="{{ client.url }}"><img class="brightness" src="{{ client.logo_url }}" alt="{{ client.name }}" /></a>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
 </div>

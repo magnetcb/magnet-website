@@ -20,7 +20,7 @@ $secondary-color: #F2BB00;
 
 // Media Query Break Points
 $break-small: 500px;
-$break-large: 1000px;
+$break-large: 1024px;
 
 %color-transition {
     color: $secondary-color;
@@ -47,10 +47,6 @@ body {
         width: 100%;
         margin: auto;
         text-align: center;
-
-        @media screen and (max-width: $break-small) {
-            margin-top: 150px;
-        }
     }
 }
 
@@ -265,11 +261,28 @@ nav {
     width: 80%;
 
     .slider {
+        @media screen and (max-width: $break-small) {
+            margin-top: 30px;
+        }
+
         .slick-slide {
             text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            float:none;
             img {
                 margin: auto;
                 height: 75vh;
+
+                @media screen and (max-width: $break-large) {
+                    height: auto;
+                    width: 90%;
+                }
+
+                @media screen and (max-width: $break-small) {
+                    height: auto;
+                    width: 100%;
+                }
             }
         }   
     }
@@ -364,6 +377,10 @@ nav {
 #contact-wrapper {
     height: 100%;
     min-height: 100%;
+
+    @media screen and (max-width: $break-small) {
+        margin-top: 150px;
+    }
 
     main {
         height: 100%;

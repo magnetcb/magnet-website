@@ -15,7 +15,7 @@
     {% feed_meta %}
     {% seo %}
   </head>
-  <body>
+  <body {% if page.id == 'clients' %}id="clients-wrapper"{% endif %}>
     <div {% if page.id == 'home' %}id="home-wrapper"{% endif %} {% if page.id == 'works' %}id="works-wrapper"{% endif %} {% if page.id == 'contact' %}id="contact-wrapper"{% endif %} class="wrapper">
       {% include navigation.html %}
       <main>

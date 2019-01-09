@@ -335,29 +335,31 @@ nav {
     display: none;
 }
 
+#clients-wrapper {
+    height: auto;
+}
+
 #clients-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     justify-items: center;
     align-items: center;
-    width: 90%;
+    width: 75%;
     margin: auto;
 
     @media screen and (max-width: $break-large) {
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 25%;
+        margin-top: 150px;
     }
 
     @media screen and (max-width: $break-small) {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 2em;
-        margin-top: 260%;
     }
 
     div {
         width: 150px;
-        // background-color: rgba($color: #000000, $alpha: 0.5);
     }
 
     img {

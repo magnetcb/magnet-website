@@ -34,6 +34,7 @@ html, body {
 
 body {
     font: 100% $font-stack;
+    font-size: 1em;
     color: $primary-color;
     background-color: $brand-color;
     position: relative;
@@ -351,6 +352,7 @@ nav {
     @media screen and (max-width: $break-large) {
         grid-template-columns: repeat(3, 1fr);
         margin-top: 150px;
+        margin-bottom: 150px;
     }
 
     @media screen and (max-width: $break-small) {

@@ -4,6 +4,15 @@
 - client: chef-meyhane
   work: brand-identity
   src: /assets/images/chef-meyhane/brand-identity/2.jpg
+- client: core-living
+  work: brand-identity
+  src: /assets/images/core-living/brand-identity/1.jpg
+- client: core-living
+  work: brand-identity
+  src: /assets/images/core-living/brand-identity/2.jpg
+- client: core-living
+  work: brand-identity
+  src: /assets/images/core-living/brand-identity/3.jpg
 - client: era-kozmetik
   work: digital
   src: /assets/images/era-kozmetik/digital/1.jpg
@@ -37,6 +46,9 @@
 - client: maxx-royal
   work: print
   src: /assets/images/maxx-royal/print/3.jpg
+- client: maxx-royal
+  work: digital
+  src: /assets/images/maxx-royal/digital/1.jpg
 - client: raphael
   work: brand-identity
   src: /assets/images/raphael/brand-identity/1.jpg
@@ -67,6 +79,9 @@
 - client: voyage
   work: print
   src: /assets/images/voyage/print/1.jpg
+- client: voyage
+  work: print
+  src: /assets/images/voyage/print/2.jpg
 - client: yapi-yapi
   work: brand-identity
   src: /assets/images/yapi-yapi/brand-identity/1.png
@@ -85,3 +100,6 @@
 - client: yapi-yapi
   work: brand-identity
   src: /assets/images/yapi-yapi/brand-identity/6.jpg
+- client: lotus-nisantasi
+  work: digital
+  src: /assets/images/lotus-nisantasi/digital/1.jpg

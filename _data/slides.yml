@@ -159,6 +159,9 @@
 - client: fiolas
   work: product-design
   src: /assets/images/fiolas/product-design/5.jpg
+- client: fiolas
+  work: product-design
+  src: /assets/images/fiolas/product-design/6.jpg
 # Essence Originals
 - client: essenence-originals
   work: product-design
@@ -166,3 +169,27 @@
 - client: essenence-originals
   work: product-design
   src: /assets/images/essenence-originals/product-design/2.jpg
+# Salvador Brand
+- client: salvador-brand
+  work: brand-identity
+  src: /assets/images/salvador-brand/brand-identity/1.jpg
+- client: salvador-brand
+  work: brand-identity
+  src: /assets/images/salvador-brand/brand-identity/2.jpg
+# Lotus Walk
+- client: lotus-walk
+  work: brand-identity
+  src: /assets/images/lotus-walk/brand-identity/1.jpg
+- client: lotus-walk
+  work: brand-identity
+  src: /assets/images/lotus-walk/brand-identity/2.jpg
+- client: lotus-walk
+  work: print
+  src: /assets/images/lotus-walk/print/1.jpg
+# Lotus Walk
+- client: catch
+  work: brand-identity
+  src: /assets/images/catch/brand-identity/1.jpg
+- client: catch
+  work: brand-identity
+  src: /assets/images/catch/brand-identity/2.jpg

@@ -1,6 +1,6 @@
 ---
-short_name: Essenence Originals
-name: essenence-originals
+short_name: essenence-originals
+name: Essenence Originals
 logo_url: assets/images/essenence-originals/logo.png
 works: []
 ---

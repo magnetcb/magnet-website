@@ -53,6 +53,9 @@
 - client: maxx-royal
   work: digital
   src: /assets/images/maxx-royal/digital/1.jpg
+- client: maxx-royal
+  work: social-media
+  src: /assets/images/maxx-royal/social-media/1.jpg
 # Raphael
 - client: raphael
   work: brand-identity
@@ -88,10 +91,10 @@
 - client: voyage
   work: print
   src: /assets/images/voyage/print/2.jpg
+- client: voyage
+  work: social-media
+  src: /assets/images/voyage/social-media/1.jpg
 # Yapi Yapi
-- client: yapi-yapi
-  work: digital
-  src: /assets/images/yapi-yapi/digital/1.jpg
 - client: yapi-yapi
   work: brand-identity
   src: /assets/images/yapi-yapi/brand-identity/1.jpg
@@ -110,6 +113,9 @@
 - client: yapi-yapi
   work: brand-identity
   src: /assets/images/yapi-yapi/brand-identity/6.jpg
+- client: yapi-yapi
+  work: digital
+  src: /assets/images/yapi-yapi/digital/1.jpg
 # Lotus Nisantasi
 - client: lotus-nisantasi
   work: digital

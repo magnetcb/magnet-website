@@ -159,3 +159,10 @@
 - client: fiolas
   work: product-design
   src: /assets/images/fiolas/product-design/5.jpg
+# Essence Originals
+- client: essenence-originals
+  work: product-design
+  src: /assets/images/essenence-originals/product-design/1.jpg
+- client: essenence-originals
+  work: product-design
+  src: /assets/images/essenence-originals/product-design/2.jpg

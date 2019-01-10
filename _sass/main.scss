@@ -344,6 +344,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
+    grid-row-gap: 2em;
     justify-items: center;
     align-items: center;
     width: 75%;

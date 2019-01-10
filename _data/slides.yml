@@ -1,9 +1,11 @@
+# Chef Meyhane
 - client: chef-meyhane
   work: brand-identity
   src: /assets/images/chef-meyhane/brand-identity/1.jpg
 - client: chef-meyhane
   work: brand-identity
   src: /assets/images/chef-meyhane/brand-identity/2.jpg
+# Core Living
 - client: core-living
   work: brand-identity
   src: /assets/images/core-living/brand-identity/1.jpg
@@ -13,9 +15,11 @@
 - client: core-living
   work: brand-identity
   src: /assets/images/core-living/brand-identity/3.jpg
+# Era Kozmetik
 - client: era-kozmetik
   work: digital
   src: /assets/images/era-kozmetik/digital/1.jpg
+# Maxx Royal
 - client: maxx-royal
   work: campaigns
   src: /assets/images/maxx-royal/campaigns/1.jpg
@@ -49,6 +53,7 @@
 - client: maxx-royal
   work: digital
   src: /assets/images/maxx-royal/digital/1.jpg
+# Raphael
 - client: raphael
   work: brand-identity
   src: /assets/images/raphael/brand-identity/1.jpg
@@ -58,6 +63,7 @@
 - client: raphael
   work: brand-identity
   src: /assets/images/raphael/brand-identity/3.jpg
+# Voyage
 - client: voyage
   work: campaigns
   src: /assets/images/voyage/campaigns/1.jpg
@@ -82,6 +88,10 @@
 - client: voyage
   work: print
   src: /assets/images/voyage/print/2.jpg
+# Yapi Yapi
+- client: yapi-yapi
+  work: digital
+  src: /assets/images/yapi-yapi/digital/1.jpg
 - client: yapi-yapi
   work: brand-identity
   src: /assets/images/yapi-yapi/brand-identity/1.jpg
@@ -100,15 +110,18 @@
 - client: yapi-yapi
   work: brand-identity
   src: /assets/images/yapi-yapi/brand-identity/6.jpg
+# Lotus Nisantasi
 - client: lotus-nisantasi
   work: digital
   src: /assets/images/lotus-nisantasi/digital/1.jpg
+# Chef Grup
 - client: chef-grup
   work: digital
   src: /assets/images/chef-grup/digital/1.jpg
 - client: chef-grup
   work: brand-identity
   src: /assets/images/chef-grup/brand-identity/1.jpg
+# Elevatione
 - client: elevatione
   work: digital
   src: /assets/images/elevatione/digital/1.jpg
@@ -124,6 +137,7 @@
 - client: elevatione
   work: social-media
   src: /assets/images/elevatione/social-media/2.jpg
+# Fiolas
 - client: fiolas
   work: product-design
   src: /assets/images/fiolas/product-design/1.jpg
@@ -132,10 +146,10 @@
   src: /assets/images/fiolas/product-design/2.jpg
 - client: fiolas
   work: product-design
-  src: /assets/images/fiolas/product-design/3.png
+  src: /assets/images/fiolas/product-design/3.jpg
 - client: fiolas
   work: product-design
-  src: /assets/images/fiolas/product-design/4.png
+  src: /assets/images/fiolas/product-design/4.jpg
 - client: fiolas
   work: product-design
-  src: /assets/images/fiolas/product-design/5.png
+  src: /assets/images/fiolas/product-design/5.jpg

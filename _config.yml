@@ -1,4 +1,4 @@
-url : https://magnetcb.com
+baseurl: magnetcb.com
 permalink: /:categories/:title
 
 collections:

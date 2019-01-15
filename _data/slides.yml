@@ -185,17 +185,7 @@
 - client: salvador-brand
   work: brand-identity
   src: /assets/images/salvador-brand/brand-identity/2.jpg
-# Lotus Walk
-- client: lotus-walk
-  work: brand-identity
-  src: /assets/images/lotus-walk/brand-identity/1.jpg
-- client: lotus-walk
-  work: brand-identity
-  src: /assets/images/lotus-walk/brand-identity/2.jpg
-- client: lotus-walk
-  work: print
-  src: /assets/images/lotus-walk/print/1.jpg
-# Lotus Walk
+# Catch
 - client: catch
   work: brand-identity
   src: /assets/images/catch/brand-identity/1.jpg

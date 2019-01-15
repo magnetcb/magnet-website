@@ -51,6 +51,9 @@
   work: print
   src: /assets/images/maxx-royal/print/3.jpg
 - client: maxx-royal
+  work: content
+  src: /assets/images/maxx-royal/content/1.jpg
+- client: maxx-royal
   work: digital
   src: /assets/images/maxx-royal/digital/1.jpg
 - client: maxx-royal
@@ -185,6 +188,16 @@
 - client: salvador-brand
   work: brand-identity
   src: /assets/images/salvador-brand/brand-identity/2.jpg
+# Lotus Walk
+#- client: lotus-walk
+#  work: brand-identity
+#  src: /assets/images/lotus-walk/brand-identity/1.jpg
+#- client: lotus-walk
+#  work: brand-identity
+#  src: /assets/images/lotus-walk/brand-identity/2.jpg
+#- client: lotus-walk
+#  work: print
+#  src: /assets/images/lotus-walk/print/1.jpg
 # Catch
 - client: catch
   work: brand-identity

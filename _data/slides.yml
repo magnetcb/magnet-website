@@ -175,12 +175,12 @@
   work: product-design
   src: /assets/images/fiolas/product-design/6.jpg
 # Essence Originals
-- client: essenence-originals
+- client: essence-originals
   work: product-design
-  src: /assets/images/essenence-originals/product-design/1.jpg
-- client: essenence-originals
+  src: /assets/images/essence-originals/product-design/1.jpg
+- client: essence-originals
   work: product-design
-  src: /assets/images/essenence-originals/product-design/2.jpg
+  src: /assets/images/essence-originals/product-design/2.jpg
 # Salvador Brand
 - client: salvador-brand
   work: brand-identity

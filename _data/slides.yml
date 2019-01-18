@@ -33,7 +33,7 @@
   work: campaigns
   src: /assets/images/maxx-royal/campaigns/4.jpg
 - client: maxx-royal
-  work: communication-strategy
+  work: campaigns
   src: /assets/images/maxx-royal/campaigns/5.jpg
 - client: maxx-royal
   work: campaigns
@@ -41,6 +41,18 @@
 - client: maxx-royal
   work: campaigns
   src: /assets/images/maxx-royal/campaigns/7.jpg
+- client: maxx-royal
+  work: campaigns
+  src: /assets/images/maxx-royal/campaigns/8.jpg
+- client: maxx-royal
+  work: campaigns
+  src: /assets/images/maxx-royal/campaigns/9.jpg
+- client: maxx-royal
+  work: campaigns
+  src: /assets/images/maxx-royal/campaigns/10.jpg
+- client: maxx-royal
+  work: campaigns
+  src: /assets/images/maxx-royal/campaigns/11.jpg
 - client: maxx-royal
   work: print
   src: /assets/images/maxx-royal/print/1.jpg
@@ -62,6 +74,9 @@
 - client: maxx-royal
   work: social-media
   src: /assets/images/maxx-royal/social-media/1.jpg
+- client: maxx-royal
+  work: communication-strategy
+  src: /assets/images/maxx-royal/campaigns/5.jpg
 # Raphael
 - client: raphael
   work: brand-identity
@@ -86,11 +101,23 @@
   work: campaigns
   src: /assets/images/voyage/campaigns/4.jpg
 - client: voyage
-  work: communication-strategy
+  work: campaigns
   src: /assets/images/voyage/campaigns/5.jpg
 - client: voyage
   work: campaigns
   src: /assets/images/voyage/campaigns/6.jpg
+- client: voyage
+  work: campaigns
+  src: /assets/images/voyage/campaigns/7.jpg
+- client: voyage
+  work: campaigns
+  src: /assets/images/voyage/campaigns/8.jpg
+- client: voyage
+  work: campaigns
+  src: /assets/images/voyage/campaigns/9.jpg
+- client: voyage
+  work: campaigns
+  src: /assets/images/voyage/campaigns/10.jpg
 - client: voyage
   work: print
   src: /assets/images/voyage/print/1.jpg
@@ -103,6 +130,9 @@
 - client: voyage
   work: digital
   src: /assets/images/voyage/digital/1.jpg
+- client: voyage
+  work: communication-strategy
+  src: /assets/images/voyage/campaigns/5.jpg
 # Yapi Yapi
 - client: yapi-yapi
   work: brand-identity

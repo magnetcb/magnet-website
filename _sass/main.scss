@@ -300,7 +300,7 @@ nav {
     text-transform: lowercase;
     border-left: 1px solid white;
     padding: 0 12px;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 
     @media screen and (max-width: $break-small) {
         font-size: 0.7em;
@@ -339,8 +339,9 @@ nav {
 #client-footer {
     div {
         .client-name {
+            font-weight: bold;
             @media screen and (max-width: $break-small) {
-                font-size: 0.7em;
+                font-size: 0.8em;
             }
         }
     }

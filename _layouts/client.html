@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<span class="client-name" style="letter-spacing: 4px; margin-bottom: 10px; display: block;">{{ page.name }}</span>
+<span class="client-name" style="letter-spacing: 4px; display: block;">{{ page.name }}</span>
 <div class="slider-container fadeIn animated">
     <div class="slider">
         {% for slide in site.data.slides %}
@@ -11,7 +11,7 @@ layout: default
         {% endfor %}
     </div>
 </div>
-<div style="margin-top: 1.5em;">
+<div id="footer">
     {% for work in page.works %}
         <a href="#{{work}}" data-work="{{work}}" class="work-name">{{work}}</a>
     {% endfor %}

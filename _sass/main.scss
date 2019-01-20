@@ -296,9 +296,11 @@ nav {
 }
 
 .work-name {
+    display: inline-block;
     text-transform: lowercase;
     border-left: 1px solid white;
-    padding: 6px 12px;
+    padding: 0 12px;
+    margin-top: 1em;
 }
 
 .work-name:hover {
@@ -327,10 +329,6 @@ nav {
 
     p {
         font-size: 1em;
-
-        @media screen and (max-width: $break-small) {
-            font-size: 0.7em;
-        }
     }
 }
 
